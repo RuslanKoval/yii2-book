@@ -1,0 +1,15 @@
+php_flag opcache.enable Off
+
+php_flag xcache.cacher Off
+php_flag xcache.size 0
+php_flag xcache.stat On
+
+#php_flag xcache.cacher Off
+#php_flag xcache.size 0
+#php_flag xcache.stat Off
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+RewriteRule ^site/about(.*)$ about$1 [R=301,NC,L]
