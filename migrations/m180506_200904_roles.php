@@ -36,12 +36,6 @@ class m180506_200904_roles extends Migration
         $auth->addChild($userRole, $ownerBook);
         $auth->addChild($userRole, $tookBook);
 
-
-        $users = \app\models\User::find()->all();
-        foreach ($users as $user) {
-            $auth->assign($userRole, $user->id);
-        }
-
     }
 
     /**

@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m180506_145638_fixture
+ * Class m180506_245638_fixture
  */
-class m180506_145638_fixture extends Migration
+class m180506_245638_fixture extends Migration
 {
     /**
      * {@inheritdoc}
